@@ -16,7 +16,7 @@
     @enderror
     <div class="flex items-center text-lg mb-1 w-full">
       <span class="w-1/3">看诊日期: </span>
-      <input type="text" name="visit-date" class="w-2/3 p-2 mx-1" placeholder="{{ date('y-m-d', strtotime($todayDate)) }}" value="{{ date('y-m-d', strtotime($todayDate)) }}" readonly>
+      <input type="text" name="visit-date" class="w-2/3 p-2 mx-1" placeholder="{{ date('d-m-y', strtotime($todayDate)) }}" value="{{ date('d-m-y', strtotime($todayDate)) }}" readonly>
     </div>
     @error('visit-date')
       <div classs="invalid-feedback">{{ $message }}</div>
